@@ -1,12 +1,16 @@
 import React from "react";
-import Mypost from "./Post";
+import Mybutton from "./MYbutton";
+import "../components/postOwnerName.css";
 function OwerPost(props) {
   return (
-    <div>
-      <h1>{props.userName} </h1>
-      <textarea placeholder="what's in your maind ?"></textarea>
-
-      <img alt="imagees" src={props.URLphoto} />
+    <div className="main-div">
+      <img className="profile-picture" src={props.URLphoto} />
+      <h4>{props.userName} </h4>
+      <textarea
+        className="texterya-nav"
+        placeholder="what's in your maind ?"
+      ></textarea>
+      <button className="btn-submit">submit</button>
     </div>
   );
 }
