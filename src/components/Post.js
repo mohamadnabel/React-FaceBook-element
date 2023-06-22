@@ -55,7 +55,7 @@ function Mypost() {
         body={DataBAse[2].post}
         URLphoto={DataBAse[2].profilePoto}
       />
-      <Mypost />
+      
     </div>
   );
 }
